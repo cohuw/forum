@@ -1,0 +1,49 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, -apple-system, sans-serif; background: #f5f5f5; color: #222; line-height: 1.5; }
+.navbar { display: flex; align-items: center; gap: 1rem; padding: 0.75rem 1.5rem; background: #1a1a2e; color: white; }
+.logo { color: white; text-decoration: none; font-size: 1.25rem; font-weight: bold; }
+.nav-links { margin-left: auto; display: flex; gap: 0.75rem; align-items: center; }
+.nav-links a, .nav-links button { color: #ccc; background: none; border: none; cursor: pointer; text-decoration: none; font-size: 0.9rem; padding: 0.25rem 0.5rem; border-radius: 4px; }
+.nav-links a:hover, .nav-links button:hover { background: rgba(255,255,255,0.1); color: white; }
+.container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+.card { background: white; border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; border: 1px solid #e0e0e0; }
+.card-title { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; }
+.card-meta { font-size: 0.8rem; color: #666; margin-bottom: 0.5rem; }
+.card-content { color: #444; white-space: pre-wrap; }
+.btn { display: inline-block; padding: 0.5rem 1rem; border-radius: 6px; border: none; cursor: pointer; font-size: 0.9rem; font-weight: 500; text-decoration: none; }
+.btn-primary { background: #1a1a2e; color: white; }
+.btn-primary:hover { background: #2d2d4e; }
+.btn-danger { background: #dc2626; color: white; }
+.btn-danger:hover { background: #b91c1c; }
+.btn-ghost { background: #f0f0f0; color: #333; }
+.btn-ghost:hover { background: #e0e0e0; }
+.btn-sm { padding: 0.25rem 0.6rem; font-size: 0.8rem; }
+.form-group { margin-bottom: 1rem; }
+.form-group label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem; color: #555; }
+.form-group input, .form-group textarea, .form-group select { width: 100%; padding: 0.6rem 0.75rem; border: 1px solid #ccc; border-radius: 6px; font-size: 0.95rem; font-family: inherit; }
+.form-group input:focus, .form-group textarea:focus { outline: none; border-color: #1a1a2e; box-shadow: 0 0 0 2px rgba(26,26,46,0.15); }
+.form-group textarea { min-height: 120px; resize: vertical; }
+.error-msg { color: #dc2626; font-size: 0.85rem; margin-top: 0.5rem; }
+.success-msg { color: #16a34a; font-size: 0.85rem; margin-top: 0.5rem; }
+.vote-bar { display: flex; align-items: center; gap: 0.5rem; margin-top: 0.75rem; }
+.vote-btn { background: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; padding: 0.2rem 0.6rem; cursor: pointer; font-size: 0.85rem; }
+.vote-btn.active-like { background: #dcfce7; border-color: #16a34a; color: #15803d; }
+.vote-btn.active-dislike { background: #fee2e2; border-color: #dc2626; color: #b91c1c; }
+.vote-btn:disabled { cursor: not-allowed; opacity: 0.6; }
+.tag { display: inline-block; background: #e8eaf6; color: #3949ab; font-size: 0.75rem; padding: 0.15rem 0.5rem; border-radius: 12px; margin-right: 0.25rem; }
+.filters { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.filter-btn { padding: 0.35rem 0.75rem; border-radius: 16px; border: 1px solid #ccc; background: white; cursor: pointer; font-size: 0.85rem; }
+.filter-btn.active { background: #1a1a2e; color: white; border-color: #1a1a2e; }
+.empty-state { text-align: center; padding: 3rem 1rem; color: #666; }
+.empty-state .empty-icon { font-size: 3rem; margin-bottom: 1rem; }
+.loading { text-align: center; padding: 2rem; color: #666; }
+.comments-section { margin-top: 1.5rem; }
+.comments-section h3 { font-size: 1rem; font-weight: 600; margin-bottom: 1rem; }
+.comment-card { background: #fafafa; border: 1px solid #e8e8e8; border-radius: 6px; padding: 0.75rem; margin-bottom: 0.75rem; }
+.page-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+.page-header h1 { font-size: 1.5rem; }
+.auth-card { max-width: 420px; margin: 3rem auto; }
+.auth-card h2 { margin-bottom: 1.5rem; font-size: 1.3rem; }
+.checkbox-group { display: flex; flex-direction: column; gap: 0.4rem; max-height: 160px; overflow-y: auto; border: 1px solid #ccc; border-radius: 6px; padding: 0.5rem; }
+.checkbox-group label { display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; font-weight: normal; cursor: pointer; }
+.checkbox-group input[type=checkbox] { width: auto; }
